@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ - ProSkill11</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+function toggleFAQ(id){
+  const el = document.getElementById(id);
+  el.classList.toggle("hidden");
+}
+</script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" class="h-20">
+      <h2 class="font-bold text-xl text-blue-900">
+        ProSkill<span class="text-orange-500">11</span>
+      </h2>
+    </div>
+    <a href="index.html" class="text-blue-600">← Back to Home</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-14 text-center">
+  <h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+  <p class="text-blue-200 mt-2">Everything you need to know</p>
+</section>
+
+<!-- FAQ -->
+<div class="max-w-4xl mx-auto px-6 py-10 space-y-4">
+
+<!-- FAQ ITEM -->
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f1')" class="w-full text-left p-5 font-semibold">
+What is ProSkill11?
+</button>
+<div id="f1" class="hidden px-5 pb-5 text-gray-600">
+ProSkill11 is a skill-based fantasy sports platform where users create teams and earn points based on real match performance.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f2')" class="w-full text-left p-5 font-semibold">
+Is ProSkill11 free to play?
+</button>
+<div id="f2" class="hidden px-5 pb-5 text-gray-600">
+Yes, ProSkill11 is completely free to play with no entry fees.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f3')" class="w-full text-left p-5 font-semibold">
+Is ProSkill11 gambling?
+</button>
+<div id="f3" class="hidden px-5 pb-5 text-gray-600">
+No, ProSkill11 is a skill-based platform. Outcomes depend on user knowledge and strategy.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f4')" class="w-full text-left p-5 font-semibold">
+How do I join a contest?
+</button>
+<div id="f4" class="hidden px-5 pb-5 text-gray-600">
+Select a match, create your team, and join the contest.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f5')" class="w-full text-left p-5 font-semibold">
+How are points calculated?
+</button>
+<div id="f5" class="hidden px-5 pb-5 text-gray-600">
+Points are based on player performance such as runs, wickets, and catches.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f6')" class="w-full text-left p-5 font-semibold">
+What is Captain and Vice-Captain?
+</button>
+<div id="f6" class="hidden px-5 pb-5 text-gray-600">
+Captain earns 2x points and Vice-Captain earns 1.5x points.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f7')" class="w-full text-left p-5 font-semibold">
+Can I create multiple teams?
+</button>
+<div id="f7" class="hidden px-5 pb-5 text-gray-600">
+Yes, multiple teams are allowed depending on contest rules.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f8')" class="w-full text-left p-5 font-semibold">
+What happens if match is canceled?
+</button>
+<div id="f8" class="hidden px-5 pb-5 text-gray-600">
+If a match is canceled, contests may be void and no points are awarded.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f9')" class="w-full text-left p-5 font-semibold">
+How is leaderboard decided?
+</button>
+<div id="f9" class="hidden px-5 pb-5 text-gray-600">
+Leaderboard is based on total points scored by your team.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f10')" class="w-full text-left p-5 font-semibold">
+Is my data safe?
+</button>
+<div id="f10" class="hidden px-5 pb-5 text-gray-600">
+Yes, we follow strict security practices to protect your data.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f11')" class="w-full text-left p-5 font-semibold">
+Can I win rewards?
+</button>
+<div id="f11" class="hidden px-5 pb-5 text-gray-600">
+Yes, rewards depend on your performance in contests.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f12')" class="w-full text-left p-5 font-semibold">
+Are rewards guaranteed?
+</button>
+<div id="f12" class="hidden px-5 pb-5 text-gray-600">
+No, rewards are performance-based.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f13')" class="w-full text-left p-5 font-semibold">
+When will I receive rewards?
+</button>
+<div id="f13" class="hidden px-5 pb-5 text-gray-600">
+Rewards are processed after match completion.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f14')" class="w-full text-left p-5 font-semibold">
+Who can use ProSkill11?
+</button>
+<div id="f14" class="hidden px-5 pb-5 text-gray-600">
+Users must be 18 years or older.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f15')" class="w-full text-left p-5 font-semibold">
+Is it legal in India?
+</button>
+<div id="f15" class="hidden px-5 pb-5 text-gray-600">
+Skill-based fantasy sports are legal in most states. Follow local laws.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f16')" class="w-full text-left p-5 font-semibold">
+What if someone cheats?
+</button>
+<div id="f16" class="hidden px-5 pb-5 text-gray-600">
+Accounts involved in fraud will be suspended or banned.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f17')" class="w-full text-left p-5 font-semibold">
+How to contact support?
+</button>
+<div id="f17" class="hidden px-5 pb-5 text-gray-600">
+Email us at support@proskill11.com
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f18')" class="w-full text-left p-5 font-semibold">
+Can I edit my team?
+</button>
+<div id="f18" class="hidden px-5 pb-5 text-gray-600">
+Yes, before match deadline.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f19')" class="w-full text-left p-5 font-semibold">
+Why are points delayed?
+</button>
+<div id="f19" class="hidden px-5 pb-5 text-gray-600">
+Points update in real-time but may have slight delays.
+</div>
+</div>
+
+<div class="bg-white rounded-xl shadow border">
+<button onclick="toggleFAQ('f20')" class="w-full text-left p-5 font-semibold">
+Can I delete my account?
+</button>
+<div id="f20" class="hidden px-5 pb-5 text-gray-600">
+Yes, contact support for deletion.
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 text-center py-6">
+  <p>© 2026 ProSkill11. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

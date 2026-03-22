@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Points System - ProSkill11</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" class="h-14 w-auto object-contain">
+      <h2 class="font-bold text-xl text-blue-900">
+        ProSkill<span class="text-orange-500">11</span>
+      </h2>
+    </div>
+
+    <a href="index.html" class="text-sm text-blue-600 hover:underline">
+      ← Back to Home
+    </a>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-14">
+  <div class="max-w-5xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-2">Points System</h1>
+    <p class="text-blue-200 text-sm">Understand how points are calculated</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="max-w-5xl mx-auto px-6 py-10 space-y-10">
+
+<!-- COMMON TABLE STYLE -->
+<style>
+.table th, .table td { padding:12px; }
+</style>
+
+<!-- BATTING -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">🏏 Batting Points</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Event</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>Run</td><td class="text-right">+1</td></tr>
+<tr><td>Boundary (4)</td><td class="text-right">+1</td></tr>
+<tr><td>Six (6)</td><td class="text-right">+2</td></tr>
+<tr><td>30 Run Bonus</td><td class="text-right">+4</td></tr>
+<tr><td>Half Century</td><td class="text-right">+8</td></tr>
+<tr><td>Century</td><td class="text-right">+16</td></tr>
+<tr><td class="text-red-600">Dismissed for Duck</td><td class="text-right text-red-600">-2</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- STRIKE RATE -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">⚡ Strike Rate (Min 10 balls)</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Strike Rate</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>> 170</td><td class="text-right">+6</td></tr>
+<tr><td>150 – 170</td><td class="text-right">+4</td></tr>
+<tr><td>130 – 149</td><td class="text-right">+2</td></tr>
+<tr><td>60 – 70</td><td class="text-right text-red-600">-2</td></tr>
+<tr><td>50 – 59</td><td class="text-right text-red-600">-4</td></tr>
+<tr><td>< 50</td><td class="text-right text-red-600">-6</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- BOWLING -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">🎯 Bowling Points</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Event</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>Wicket</td><td class="text-right">+25</td></tr>
+<tr><td>Bowled / LBW Bonus</td><td class="text-right">+8</td></tr>
+<tr><td>3 Wickets</td><td class="text-right">+8</td></tr>
+<tr><td>4 Wickets</td><td class="text-right">+12</td></tr>
+<tr><td>5 Wickets</td><td class="text-right">+16</td></tr>
+<tr><td>Maiden Over</td><td class="text-right">+12</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- ECONOMY -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">📉 Economy Rate (Min 2 overs)</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Economy</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>< 5</td><td class="text-right">+6</td></tr>
+<tr><td>5 – 6</td><td class="text-right">+4</td></tr>
+<tr><td>6 – 7</td><td class="text-right">+2</td></tr>
+<tr><td>10 – 11</td><td class="text-right text-red-600">-2</td></tr>
+<tr><td>11 – 12</td><td class="text-right text-red-600">-4</td></tr>
+<tr><td>> 12</td><td class="text-right text-red-600">-6</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- FIELDING -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">🧤 Fielding Points</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Event</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>Catch</td><td class="text-right">+8</td></tr>
+<tr><td>3 Catch Bonus</td><td class="text-right">+4</td></tr>
+<tr><td>Run Out (Direct)</td><td class="text-right">+12</td></tr>
+<tr><td>Run Out (Assist)</td><td class="text-right">+6</td></tr>
+<tr><td>Stumping</td><td class="text-right">+12</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- OTHER -->
+<div class="bg-white p-6 rounded-xl shadow-sm border">
+<h2 class="text-xl font-bold text-blue-800 mb-4">🎮 Other Points</h2>
+
+<table class="w-full table border">
+<thead class="bg-gray-100">
+<tr>
+<th class="text-left">Event</th>
+<th class="text-right">Points</th>
+</tr>
+</thead>
+<tbody class="divide-y">
+
+<tr><td>Playing XI</td><td class="text-right">+4</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- CAPTAIN -->
+<div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-xl">
+<h2 class="text-xl font-bold text-green-700 mb-3">⭐ Captain & Vice Captain</h2>
+<ul class="list-disc ml-6">
+<li>Captain earns 2x points</li>
+<li>Vice Captain earns 1.5x points</li>
+</ul>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-xl">
+<h2 class="text-xl font-bold text-red-700 mb-3">⚠️ Important Notes</h2>
+<ul class="list-disc ml-6">
+<li>Points are based on official match data</li>
+<li>Points may change after review</li>
+<li>Scoring may vary by match format</li>
+</ul>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 text-center py-6 mt-10">
+  <p>© 2026 ProSkill11. All rights reserved.</p>
+  <p class="text-xs mt-2">Skill-based platform. No gambling involved.</p>
+</footer>
+
+</body>
+</html>
